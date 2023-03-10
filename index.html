@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+  <header>
+      <h1 id="title">Responsive Web Design course evaluation form</h1>
+      <p id="description">Thank you for taking the time to help us improve the course!</p>
+  </header>
+  <main>
+      <form id="survey-form">
+        <fieldset>
+          <h2>Please enter your personal information.</h2>
+          <label id="name-label">Name</label>
+          <input id="name" class="personal-information" type="text" name="name" required placeholder="Enter your full name"/>
+          <label id="email-label">Email</label>
+          <input id="email" class="personal-information" type="email" name="email" required placeholder="Enter your email"/>
+          <label id="number-label">Age</label>
+          <input id="number" class="personal-information" type="number" name="number" placeholder="Enter your age" min="0" max="100"/>
+          <label id="dropdown-label">Which option best describes your current role?</label>
+          <select id="dropdown">
+            <option name="student" value="">Select current role</option>
+            <option name="student" value="1">Student</option>
+            <option name="select-current-role" value="2">Select current role</option>
+            <option name="full-time-job" value="3">Full time job</option>
+            <option name="full-time-learner" value="4">Full time learner</option>
+            <option name="prefer-not-to-say" value="5">Prefer not to say</option>
+            <option name="other" value="6">Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <h2>Would you recommend this course to a friend?</h2>
+          <label>
+            <input type="radio" name="button" value="1"/> Definitely
+          </label>
+          <label>
+            <input type="radio" name="button" value="2"/> Maybe
+          </label>
+          <label>
+            <input type="radio" name="button" value="3"/> Not sure
+          </label>
+        </fieldset>
+        <fieldset>
+          <h2>What other paths of knowledge would you like to study?</h2>
+          <label>
+            <input type="checkbox" value="1"/> JavaScript Algorithms and Data Structures
+          </label>
+          <label>
+            <input type="checkbox" value="2"/> Front End Development Libraries
+          </label>
+          <label>
+            <input type="checkbox" value="3"/> Data Visualization
+          </label>
+          <label>
+            <input type="checkbox" value="4"/> Relational Database
+          </label>
+          <label>
+            <input type="checkbox" value="5"/> Back End Development and APIs
+          </label>
+          <label>
+            <input type="checkbox" value="6"/> Quality Assurance
+          </label>
+          <label>
+            <input type="checkbox" value="7"/> Scientific Computing with Python
+          </label>
+          <label>
+            <input type="checkbox" value="8"/> Data Analysis with Python
+          </label>
+          <label>
+            <input type="checkbox" value="9"/> Information Security
+          </label>
+          <label>
+            <input type="checkbox" value="10"/> Machine Learning with Python
+          </label>
+        </fieldset>
+        <fieldset>
+          <h2>Any comments or suggestions?</h2>
+          <label>
+            <textarea rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit"/>
+      </form>
+  </main>
+</body>
+</html>
